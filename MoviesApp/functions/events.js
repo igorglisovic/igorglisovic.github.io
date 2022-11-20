@@ -40,14 +40,14 @@ const events = () => {
 
       localStorage.setItem('VERSION_ID', versionId)
       localStorage.setItem('GROUP', group)
-      location.href = `/movie.html`
+      location.href = `/movie/`
     }
 
     if (el.classList.contains('person')) {
       const id = el.closest('.card').dataset.person__id
 
       localStorage.setItem('PERSON_ID', id)
-      location.href = `/person.html`
+      location.href = `/person/`
     }
 
     if (el.classList.contains('crew-btn')) {
@@ -56,7 +56,7 @@ const events = () => {
       if (id === 'null') return
 
       localStorage.setItem('PERSON_ID', id)
-      location.href = `/person.html`
+      location.href = `/person/`
     }
   })
 }
