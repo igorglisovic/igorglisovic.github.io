@@ -99,7 +99,7 @@ const displayMovieDescription = async () => {
         }</span>
         <span>Directed by:
         <a href="${
-          movie.crew[0].id ? '/person/' : '#'
+          movie.crew[0].id ? '/MoviesApp/person/' : '#'
         }" id="movie-director"> ${movie.directedBy}</a>
         </span>
       </div>

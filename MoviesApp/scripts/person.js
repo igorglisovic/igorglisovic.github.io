@@ -30,7 +30,7 @@ const displayPerson = async () => {
         <span id="person-release">${
           person.birthDate ? person.birthDate : "No person's birth date found."
         }</span>
-        <span href="/person/" id="person-director">${
+        <span href="/MoviesApp/person/" id="person-director">${
           person.birthPlace
             ? person.birthPlace
             : "No person's birth place found."
