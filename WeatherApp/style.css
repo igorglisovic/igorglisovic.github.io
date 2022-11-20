@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::root {
+  --translate: 0;
+}
+
+body {
+  background-color: rgb(28, 54, 206);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  padding: 5rem;
+}
+
+h1 {
+  color: rgb(229, 255, 0);
+  font-weight: 600;
+}
+
+.weather {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-color: rgb(247, 247, 247);
+  padding: 20px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.country {
+  position: absolute;
+  top: 11%;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.current-degree {
+  position: absolute;
+  top: 20%;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.wind {
+  position: absolute;
+  top: 42%;
+}
+
+.hourly-wrapper {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  margin-right: 10px;
+  bottom: 25%;
+  left: 20px;
+}
+
+.hourly {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  flex-direction: column;
+  transition: transform 0.7s;
+  font-size: 1rem;
+  transform: translateX(var(--translate));
+}
+
+.right-arrow,
+.left-arrow {
+  position: absolute;
+  display: block;
+  font-size: 2rem;
+  height: 50px;
+  bottom: 74px;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.all-day__degree {
+  font-weight: 600;
+}
+
+.linkedin {
+  color: #fff;
+  font-size: 2.2rem;
+}

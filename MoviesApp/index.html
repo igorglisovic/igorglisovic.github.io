@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer type="module" src="scripts/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>MoviesApp</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="/">Igor Movie</a>
+        <form id="search-form">
+          <input type="text" placeholder="e.g.Batman" id="search-input" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+    <main>
+      <section class="search">
+        <div class="container">
+          <h2 id="search-value"></h2>
+          <div class="search-wrapper search-movies"></div>
+          <div class="search-wrapper search-people"></div>
+        </div>
+      </section>
+      <section class="upcoming">
+        <div class="container">
+          <h2>Upcoming Movies</h2>
+          <div class="movies-upcoming">
+            <button class="right-arrow">></button>
+            <button class="left-arrow"><</button>
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular">
+        <div class="container">
+          <h2>Popular Movies</h2>
+          <div class="movies-popular">
+            <button class="right-arrow">></button>
+            <button class="left-arrow"><</button>
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

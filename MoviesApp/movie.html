@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script defer type="module" src="scripts/movie.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Movie</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a class="logo" href="/">Igor Movie</a>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="movie-wrapper"></div>
+      </div>
+      <section class="related">
+        <div class="container">
+          <h2>Related Movies</h2>
+          <div class="movies-related">
+            <button class="right-arrow">></button>
+            <button class="left-arrow"><</button>
+            <div class="lds-ring">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="overlay hidden">
+      <div class="trailer-container">
+        <video class="trailer-video" controls>
+          Your browser does not support the video tag.
+        </video>
+        <button class="btn-back">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

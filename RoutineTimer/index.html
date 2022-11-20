@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+    <title>Routine counter</title>
+  </head>
+  <body>
+    <a
+      href="https://www.linkedin.com/in/igor-glisovic/"
+      target="_blank"
+      class="linkedin"
+      style="
+        position: absolute;
+        color: blue;
+        top: 10px;
+        left: 22%;
+        font-size: 1.5rem;
+      "
+      ><i class="fa fa-linkedin-square"></i
+    ></a>
+    <div class="alert">
+      <span class="span-alert">Tekst</span>
+      <button class="btn-alert">Ok</button>
+    </div>
+    <div class="container">
+      <button class="btn-reset"><i class="fas fa-undo"></i></button>
+      <div class="routine">
+        <button class="circle" id="circle1"></button>
+        <span>Entertainment</span>
+        <span class="timer-label" id="timer1">00:00:00</span>
+        <input
+          class="input-time hours"
+          type="number"
+          max="24"
+          min="0"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+        <span class="sep">:</span>
+        <input
+          class="input-time minutes"
+          type="number"
+          max="59"
+          min="1"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+      </div>
+      <div class="routine">
+        <button class="circle" id="circle2"></button>
+        <span>Productive</span>
+        <span class="timer-label" id="timer2">00:00:00</span>
+        <input
+          class="input-time hours"
+          type="number"
+          max="24"
+          min="0"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+        <span class="sep">:</span>
+        <input
+          class="input-time minutes"
+          type="number"
+          max="59"
+          min="1"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+      </div>
+      <div class="routine">
+        <button class="circle" id="circle3"></button>
+        <span>Sleeping</span>
+        <span class="timer-label" id="timer3">00:00:00</span>
+        <input
+          class="input-time hours"
+          type="number"
+          max="24"
+          min="0"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+        <span class="sep">:</span>
+        <input
+          class="input-time minutes"
+          type="number"
+          max="59"
+          min="1"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+      </div>
+      <div class="routine">
+        <button class="circle-unknown" id="circle4"></button>
+        <span>Unknown</span>
+        <span class="timer-label" id="timer4">00:00:00</span>
+        <input
+          class="input-time hours"
+          type="number"
+          max="24"
+          min="0"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+        <span class="sep">:</span>
+        <input
+          class="input-time minutes"
+          type="number"
+          max="59"
+          min="1"
+          oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+          maxlength="2"
+        />
+      </div>
+      <button class="btn-submit">Submit</button>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>

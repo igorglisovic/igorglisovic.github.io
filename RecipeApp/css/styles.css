@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', 'sans-serif';
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+.mobile-container {
+  background-color: #fff;
+  width: 400px;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+header input,
+header button {
+  border: none;
+  background-color: transparent;
+}
+header input {
+  background-color: #eee;
+  padding: 5px 0;
+}
+
+.fav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: #ffe7e7;
+  padding: 30px;
+}
+.fav-container ul {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.fav-container ul li {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 70px;
+}
+.fav-container ul li img {
+  border-radius: 50%;
+  width: 60px;
+  border: 2px solid #fff;
+  object-fit: cover;
+  cursor: pointer;
+}
+.fav-container ul li span {
+  font-size: 0.85rem;
+}
+
+.meals {
+  position: relative;
+  height: 380px;
+}
+.meals .next-btn {
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  padding: 0 10px;
+  font-size: 1.5rem;
+  background-color: red;
+  cursor: pointer;
+}
+.meals .meal {
+  margin: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  height: 360px;
+  background-size: cover;
+  position: relative;
+}
+.meals .meal .random {
+  position: absolute;
+  top: 10px;
+  background-color: #fff;
+  padding: 0.4em 1em;
+}
+.meals .meal .random h2 {
+  font-size: 0.9rem;
+  font-weight: normal;
+}
+.meals .meal .meal-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 0px;
+  width: 330px;
+  background-color: #fff;
+}
+.meals .meal .meal-body button {
+  border: none;
+  background-color: transparent;
+  font-size: 1.7rem;
+}
+.meals .meal .meal-body h2 {
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-fav-close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  overflow: auto;
+}
+.modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: #eee;
+  max-width: 450px;
+  height: fit-content;
+  padding: 20px 25px;
+}
+.modal .modal-content p {
+  font-size: 0.8rem;
+}
+.modal .modal-content img {
+  width: 100%;
+}
+.modal button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1rem;
+  border: none;
+  z-index: 22;
+  background-color: transparent;
+}
