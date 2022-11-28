@@ -4,7 +4,7 @@ let session = new Session()
 let session_id = session.getSession()
 
 if (session_id === '') {
-  window.location.href = '/index.html'
+  window.location.href = '/SocialNetwork'
 } else {
   const populateUserData = async function () {
     const user = new User()
@@ -24,7 +24,7 @@ document.getElementById('logout').addEventListener('click', e => {
   e.preventDefault()
 
   session.destroySession()
-  window.location.href = '/index.html'
+  window.location.href = '/SocialNetwork'
 })
 
 document.getElementById('edit-account').addEventListener('click', e => {
