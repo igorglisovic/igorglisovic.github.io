@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-repeat: no-repeat; */
+  font-family: sans-serif;
+}
+
+img {
+  margin-top: 30px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  gap: 20px;
+}
+
+#login-form {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  max-width: 650px;
+  width: 500px;
+}
+
+#login-h2 {
+  color: #000;
+  margin-bottom: 30px;
+}
+
+.login-form label {
+  color: rgb(27, 27, 27);
+  font-weight: 600;
+}
+
+input {
+  padding: 10px 8px;
+  border: 0;
+}
+
+#login-form div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+button {
+  padding: 0.7em 1em;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.register-popup,
+.izmeni-modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+#register-form,
+#edit-form {
+  background-color: #000;
+  padding: 40px;
+  width: 500px;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+#register-form div,
+#edit-form div {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+form,
+input {
+  border-radius: 30px;
+}
+
+#landing button {
+  border-radius: 20px;
+  background-color: #eee;
+  border: 0;
+}
+
+#landing button:hover {
+  background-color: rgb(86, 86, 86);
+  color: #fff;
+}
+
+#btn-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0px;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  color: red;
+}
+
+.inner-container {
+  border: 1px solid green;
+}
+
+.inner-container.left-side {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.inner-container.right-side {
+  margin-top: 30px;
+}
+
+.inner-container.left-side button {
+  font-size: 0.85rem;
+}
+
+.register-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.profile-img {
+  margin: 15px 0;
+  border-radius: 50%;
+  max-width: 80px;
+  border: 4px solid #fff;
+}
+
+.inner-container.right-side form {
+  display: flex;
+  height: 100px;
+  padding: 10px;
+}
+
+.inner-container.right-side form textarea {
+  width: 85%;
+  border: 0;
+  padding: 10px;
+  resize: none;
+  outline: green;
+}
+
+.inner-container.right-side form button {
+  display: block;
+  width: 15%;
+  border: 0;
+}
+
+.delete-profile {
+  background-color: red;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+#allPostsWrapper .single-post {
+  background-color: #eaeaea;
+  padding: 15px;
+  margin-top: 15px;
+  color: #000;
+}
+
+#allPostsWrapper .single-post .post-content {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+#allPostsWrapper .single-post .post-actions {
+  display: flex;
+  justify-content: space-between;
+  color: grey;
+}
+
+#allPostsWrapper .single-post .post-actions div button.like-btn {
+  background-image: url('img/like.png');
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.comment-btn {
+  background-image: url('img/comment.png');
+  padding: 5px 15px 5px 40px;
+  background-repeat: no-repeat;
+  background-position: 10px;
+  border: 0;
+}
+
+#allPostsWrapper .single-post .post-actions div button.remove-btn {
+  border-color: red;
+  color: red;
+  padding: 5px 15px;
+}
+
+#allPostsWrapper .single-post .post-comments form {
+  height: 30px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+#allPostsWrapper .single-post .post-comments form input {
+  width: 85%;
+  padding: 10px;
+}
+
+#allPostsWrapper .single-post .post-comments form button {
+  width: 15%;
+  padding: 0;
+  font-size: 0.8rem;
+  background-color: grey;
+}
+
+#allPostsWrapper .single-post .post-comments .single-comment {
+  border: 1px dotted green;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.linkedin {
+  color: blue;
+  padding: 5px;
+}
+
+.fa-linkedin-square {
+  font-size: 2rem;
+}
+
+.linkedin:hover {
+  color: white;
+}

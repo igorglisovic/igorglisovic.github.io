@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="js/Validator.js" defer></script>
+    <script src="js/Session.js" defer></script>
+    <script src="js/User.js" defer></script>
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <main id="landing">
+      <img src="img/logo.png" alt="" />
+      <a
+        href="https://www.linkedin.com/in/igor-glisovic/"
+        target="_blank"
+        class="linkedin"
+      >
+        <i class="fa fa-linkedin-square"></i>
+      </a>
+      <form action="" id="login-form">
+        <h2 id="login-h2">Login</h2>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <button>Log in</button>
+      </form>
+      <div class="register-wrapper">
+        <h3>Don't have an account?</h3>
+        <button id="btn-open-modal">Register!</button>
+      </div>
+      <div class="register-popup hidden">
+        <form action="" id="register-form">
+          <button type="button" id="btn-close">X</button>
+          <h2>Registracija korisnika</h2>
+          <div>
+            <label for="register-name">Username: *</label>
+            <input
+              type="text"
+              name="register-name"
+              id="register-name"
+              required
+            />
+          </div>
+          <div>
+            <label for="register-email">E-mail adress: *</label>
+            <input
+              type="email"
+              name="register-email"
+              id="register-email"
+              required
+            />
+          </div>
+          <div>
+            <label for="register-password">Password: *</label>
+            <input
+              type="password"
+              name="register-password"
+              id="register-password"
+              required
+            />
+          </div>
+          <div>
+            <label for="ponovi-password">Repeat password: *</label>
+            <input
+              type="password"
+              name="ponovi-password"
+              id="ponovi-password"
+              required
+            />
+          </div>
+          <button id="btn-register" type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
