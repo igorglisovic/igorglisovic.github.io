@@ -161,7 +161,7 @@ const getAllPosts = async function () {
 
           <div class="post-comments hidden">
           <form>
-          <input placeholder="Napisi komentar...." type="text" />
+          <input placeholder="Write a comment..." type="text" />
           <button onclick="commentPostSubmit(event)">Comment</button>
           </form>
           ${comments_html}
