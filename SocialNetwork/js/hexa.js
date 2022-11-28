@@ -24,7 +24,7 @@ document.getElementById('logout').addEventListener('click', e => {
   e.preventDefault()
 
   session.destroySession()
-  window.location.href = '/'
+  window.location.href = '/index.html'
 })
 
 document.getElementById('edit-account').addEventListener('click', e => {
