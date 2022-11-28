@@ -68,7 +68,7 @@ class User {
       .then(() => {
         const session = new Session()
         session.destroySession()
-        window.location.href = '/'
+        window.location.href = '/index.html'
       })
   }
 

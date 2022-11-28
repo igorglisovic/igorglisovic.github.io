@@ -4,7 +4,7 @@ let session = new Session()
 let session_id = session.getSession()
 
 if (session_id === '') {
-  window.location.href = '/'
+  window.location.href = '/index.html'
 } else {
   const populateUserData = async function () {
     const user = new User()
