@@ -29,7 +29,7 @@ const searchRelatedMovies = async function (container, VERSION_ID, name) {
   movies.forEach(movie => {
     const movieImg = movie.posterImage
       ? movie.posterImage.url
-      : './imgs/image-not-found.png'
+      : '../imgs/image-not-found.png'
 
     moviesHtml += `
               <div class="card" data-version__id="${movie.emsVersionId}" data-group="movies">

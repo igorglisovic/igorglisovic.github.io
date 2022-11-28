@@ -92,6 +92,11 @@ nav {
   transition: all 1s;
 }
 
+.container {
+  width: clamp(300px, 80vw, 1350px);
+  margin: 0 auto;
+}
+
 .balance {
   grid-column: 1 / span 2;
   display: flex;
@@ -101,7 +106,7 @@ nav {
 }
 
 .balance__label {
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   font-weight: 500;
   margin-bottom: -0.2rem;
 }
@@ -112,7 +117,7 @@ nav {
 }
 
 .balance__value {
-  font-size: 4.5rem;
+  font-size: clamp(3rem, 2.5vw, 4.5rem);
   font-weight: 400;
 }
 
@@ -178,7 +183,7 @@ nav {
 }
 
 .summary__value {
-  font-size: 2.2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
   margin-right: 2.5rem;
 }
 
@@ -290,19 +295,16 @@ h2 {
   font-weight: 600;
 }
 
+.test-data__wrapper {
+  margin-top: 15px;
+}
+
 .test-data {
   font-size: 1.5rem;
-  position: absolute;
-  top: 85px;
-
-  right: 80px;
 }
 
 .test-data-2 {
   font-size: 1.5rem;
-  position: absolute;
-  top: 105px;
-  right: 80px;
 }
 
 .linkedin {
@@ -311,4 +313,13 @@ h2 {
   font-size: 2.5rem;
   left: 40px;
   color: blue;
+}
+
+@media only screen and (max-width: 870px) {
+  .app,
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
 }
