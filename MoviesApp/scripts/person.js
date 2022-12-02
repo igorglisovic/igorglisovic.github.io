@@ -14,7 +14,7 @@ const displayPerson = async () => {
   console.log(person)
 
   if (!person) {
-    html = <p>No person's info found.</p>
+    html = `<p>No person's info found.</p>`
     personWrapper.insertAdjacentHTML('afterbegin', html)
     return
   }
