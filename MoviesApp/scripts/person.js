@@ -11,7 +11,6 @@ const id = localStorage.getItem('PERSON_ID')
 let html2 = ''
 const displayPerson = async () => {
   const { person } = await getPerson(id, personWrapper)
-  console.log(person)
 
   if (!person) {
     html = `<p>No person's info found.</p>`

@@ -30,10 +30,7 @@ const displayMovieDescription = async () => {
 
   const { movie } = await getMovie(url, movieWrapper)
 
-  console.log(movie)
-
   if (movie.crew[0].id) {
-    console.log('dsaadsdasdsa')
     localStorage.setItem('PERSON_ID', movie.crew[0].id)
   }
 
