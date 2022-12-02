@@ -23,7 +23,7 @@ const displayPerson = async () => {
 
   const personImg = person.headShotImage
     ? person.headShotImage.url
-    : './imgs/image-not-found.png'
+    : '../imgs/image-not-found.png'
 
   const html = ` 
   <div class="person-info">
@@ -57,7 +57,7 @@ const displayPerson = async () => {
     movies.forEach(movie => {
       const movieImg = movie.posterImage
         ? movie.posterImage.url
-        : './imgs/image-not-found.png'
+        : '../imgs/image-not-found.png'
       html2 += `
     <div class="card" data-version__id="${movie.emsVersionId}" data-group="person-films">
         <h2 class="movie-title">${movie.name}</h2>

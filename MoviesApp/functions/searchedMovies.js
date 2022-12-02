@@ -64,7 +64,7 @@ const searchedMovies = async () => {
 
     html = '<h3 class="search-type">People:</h3>'
 
-    console.log(peopleSearch)
+    
     peopleSearch.forEach(person => {
       const personImg = person.headShotImage
         ? person.headShotImage.url

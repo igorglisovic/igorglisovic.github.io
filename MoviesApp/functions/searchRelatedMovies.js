@@ -18,7 +18,6 @@ const searchRelatedMovies = async function (container, VERSION_ID, name) {
 
   let { movies } = search
 
-  console.log(movies)
 
   if (VERSION_ID) {
     movies = movies.filter(movie => movie.emsVersionId !== VERSION_ID)
