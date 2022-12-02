@@ -13,6 +13,12 @@ const displayPerson = async () => {
   const { person } = await getPerson(id, personWrapper)
   console.log(person)
 
+  if (!person) {
+    html = <p>No person's info found.</p>
+    personWrapper.insertAdjacentHTML('afterbegin', html)
+    return
+  }
+
   const { filmography: movies } = person
 
   const personImg = person.headShotImage
