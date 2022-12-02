@@ -47,7 +47,7 @@ document.getElementById('edit-form').addEventListener('submit', e => {
 })
 
 document.querySelector('.delete-profile').addEventListener('click', e => {
-  const text = 'Da li ste sigurni da zelite da obrisete profil?'
+  const text = 'Are you sure you want to delete your profile?'
 
   if (confirm(text) === true) {
     const user = new User()
