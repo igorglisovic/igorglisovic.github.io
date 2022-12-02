@@ -51,7 +51,7 @@ const searchedMovies = async () => {
     searchMovies.forEach(movie => {
       const movieImg = movie.posterImage
         ? movie.posterImage.url
-        : './imgs/image-not-found.png'
+        : '../imgs/image-not-found.png'
 
       html += `
     <div class="card" data-version__id="${movie.emsVersionId}" data-group="search"> 
@@ -68,7 +68,7 @@ const searchedMovies = async () => {
     peopleSearch.forEach(person => {
       const personImg = person.headShotImage
         ? person.headShotImage.url
-        : './imgs/image-not-found.png'
+        : '../imgs/image-not-found.png'
 
       html += `
     <div class="card" data-person__id="${person.id}" data-group="search"> 
