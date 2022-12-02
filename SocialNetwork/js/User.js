@@ -85,7 +85,8 @@ class User {
               session.user_id = obj.id
               session.startSession()
               loggedIn = 1
-              window.location.href = '/hexa.html'
+              window.location.href =
+                'https://igorglisovic.github.io/SocialNetwork/hexa.html'
             }
           })
 
