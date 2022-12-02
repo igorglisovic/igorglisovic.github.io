@@ -25,7 +25,7 @@ class User {
         const session = new Session()
         session.user_id = d.id
         session.startSession()
-        window.location.href = 'SocialNetwork/hexa.html'
+        window.location.href = '/hexa.html'
       })
   }
 
@@ -85,7 +85,7 @@ class User {
               session.user_id = obj.id
               session.startSession()
               loggedIn = 1
-              window.location.href = 'SocialNetwork/hexa.html'
+              window.location.href = '/hexa.html'
             }
           })
 
