@@ -25,7 +25,8 @@ class User {
         const session = new Session()
         session.user_id = d.id
         session.startSession()
-        window.location.href = '/hexa.html'
+        window.location.href =
+          'https://igorglisovic.github.io/SocialNetwork/hexa.html'
       })
   }
 
@@ -53,7 +54,8 @@ class User {
     })
       .then(res => res.json())
       .then(data => {
-        window.location.href = 'SocialNetwork/hexa.html'
+        window.location.href =
+          'https://igorglisovic.github.io/SocialNetwork/hexa.html'
       })
   }
 

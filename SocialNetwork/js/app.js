@@ -4,7 +4,8 @@ let session = new Session()
 session = session.getSession()
 
 if (session !== '') {
-  window.location.href = 'SocialNetwork/hexa.html'
+  window.location.href =
+    'https://igorglisovic.github.io/SocialNetwork/hexa.html'
 }
 
 const btnClose = document.getElementById('btn-close')
