@@ -9,7 +9,7 @@ const searchInput = document.getElementById('search-input')
 const searchValueLabel = document.getElementById('search-value')
 
 const searchedMovies = async () => {
-  searchForm.addEventListener('submit', async e => {
+  searchForm.addEventListener('submit', async (e) => {
     e.preventDefault()
     // Clear old values
     let html = ''
@@ -48,10 +48,10 @@ const searchedMovies = async () => {
     }
 
     html = '<h3 class="search-type">Movies:</h3>'
-    searchMovies.forEach(movie => {
+    searchMovies.forEach((movie) => {
       const movieImg = movie.posterImage
         ? movie.posterImage.url
-        : '../imgs/image-not-found.png'
+        : './imgs/image-not-found.png'
 
       html += `
     <div class="card" data-version__id="${movie.emsVersionId}" data-group="search"> 
@@ -64,11 +64,10 @@ const searchedMovies = async () => {
 
     html = '<h3 class="search-type">People:</h3>'
 
-    
-    peopleSearch.forEach(person => {
+    peopleSearch.forEach((person) => {
       const personImg = person.headShotImage
         ? person.headShotImage.url
-        : '../imgs/image-not-found.png'
+        : './imgs/image-not-found.png'
 
       html += `
     <div class="card" data-person__id="${person.id}" data-group="search"> 
